@@ -1,0 +1,259 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;700&display=swap');
+* {
+    margin: 0;
+    padding: 0;
+}
+html {
+    font-family: 'Open Sans', sans-serif;
+    --bg-color: #FFFFFF;
+    --main-color: #EB6C27;
+}
+
+.body__header{
+    background: linear-gradient(0deg, rgba(36, 36, 36, 0.4), rgba(36, 36, 36, 0.4)),
+                url(../img/pageheader-1920w.jpg);
+    background-repeat: no-repeat;
+    height: 35vh;
+    background-size:  cover;
+    background-position: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: end;
+    align-items: center;
+}
+
+    /*** NAVBAR menu ***/
+.body_nav {
+    position: sticky;
+    top: 0;
+    width: 100%;
+}
+.logo{
+    display: inline-block;
+    color: var(--white);
+    font-size: 60px;
+    margin-left: 10px;
+}
+.nav {
+    width: 100%;
+    height: 220px;
+    position: fixed;
+    background-color: var(--main-color);
+    overflow: hidden;
+}
+.menu a{
+    display: block;
+    text-align: center;
+    padding: 10px;
+    color: var(--bg-color);
+    text-decoration: none;
+}
+.nav{
+    max-height: 0;
+    transition: max-height .5s ease-out;
+}
+
+/*** Menu Icon ***/
+.hamb{
+    cursor: pointer;
+    float: right;
+    padding: 40px 20px;
+}
+.hamb-line {
+    background: black;
+    display: block;
+    height: 2px;
+    position: relative;
+    width: 24px;
+}
+.hamb-line::before,
+.hamb-line::after{
+    background: black;
+    content: '';
+    display: block;
+    height: 100%;
+    position: absolute;
+    transition: all .2s ease-out;
+    width: 100%;
+}
+.hamb-line::before{
+    top: 5px;
+}
+.hamb-line::after{
+    top: -5px;
+}
+.side-menu {
+    display: none;
+}
+
+.side-menu:checked ~ nav{
+    max-height: 100%;
+}
+.side-menu:checked ~ .hamb .hamb-line {
+    background: transparent;
+}
+.side-menu:checked ~ .hamb .hamb-line::before {
+    transform: rotate(-45deg);
+    top:0;
+}
+.side-menu:checked ~ .hamb .hamb-line::after {
+    transform: rotate(45deg);
+    top:0;
+}
+
+
+/*** HEADER ***/
+
+.header-main {
+    color: var(--bg-color);
+    font-style: bold;
+    font-size: 2em;
+}
+
+.header-light {
+    font-weight: 200;
+    font-size: 1.3em;
+    padding-bottom: 1em;
+}
+
+
+
+
+
+.body_services {
+    padding: 2em 1em;
+}
+span {
+    color: var(--main-color);
+}
+.heading {
+    padding-top: 1em;
+    font-weight: 700;
+    font-size: 1.4em;
+}
+p {
+    padding-top: 1em;
+    font-size: .9em;
+}
+
+
+/*** Service-CONTENT ***/
+
+.right-cor img {
+    border-radius: 0 0 50px 0;
+}
+
+.left-cor img {
+    border-radius: 0 0 0 50px;
+}
+
+.img-rsp {
+    display: block;
+    width: 100%;
+    max-height: 200px;
+    object-fit: cover;
+    padding-top: 2.5em;
+}
+
+.service__button {
+    text-align: left;
+}
+
+.btn {
+    text-align: center;
+    display: inline-block;
+    color: var(--main-color);
+    font-size: 1.1em;
+    font-weight: 400;
+    padding: .4em 1.3em;
+    text-decoration: none;
+    border: 1px dashed var(--main-color);
+}
+
+
+
+
+/*** Body-OTHER ***/
+
+.body__other {
+    background: linear-gradient(0deg, rgba(36, 36, 36, 0.8), rgba(36, 36, 36, 0.8)), linear-gradient(180deg, rgba(66, 51, 42, 0.4) 0%, rgba(255, 255, 255, 0) 100%),
+    url(../img/background-CTAblock-4460w.jpg);
+    background-repeat: no-repeat;
+    height: 30vh;
+    background-size:  cover;
+    background-position: center;
+    padding: 0 1em;
+    margin-bottom: 1em;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.other-text {
+    color: var(--bg-color);
+    font-size: 1.2em;
+    font-style: bold;
+    font-weight: 600;
+    padding-right: 1em;
+}
+
+.btn-fill {
+    background-color: var(--main-color);
+    color: var(--bg-color);
+    padding: 10px 30px;
+}
+
+
+
+/*** Body-REFERENCE ***/
+
+.body__references {
+    padding: 0 1em;
+}
+
+.reference-heading {
+    text-align: center;
+    padding-top: .5em;
+}
+
+.reference-text {
+    padding-top: 0;
+    text-align: center;
+    font-size: .8em;
+}
+
+.service-button--center {
+    padding-top: 3em;
+    text-align: center;
+}
+
+
+
+/*** FOOTER ***/
+
+.body__footer {
+    margin-top: 5em;
+    padding: 3em 2em;
+    background-color: var(--main-color);
+}
+
+.heading-footer {
+    text-align: center;
+    color: var(--bg-color);
+    font-size: 1.4em;
+    font-style: bold;
+}
+
+.text-footer {
+    color: var(--bg-color);
+    text-align: center;
+    font-size: 1em;
+}
+
+.btn-white {
+    background-color: var(--bg-color);
+    border: none;
+    font-style: bold;
+    font-weight: 600;
+    padding: 15px 37px;
+}
