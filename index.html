@@ -14,16 +14,16 @@
 </head>
 <body class="body">
         <div class="body__nav">
-            <a href="./index.html" class="logo"><img src="./img/logo.png" alt="logo" height="30px" width="auto"></a>
+            <a href="./index.html" class="logo"><img class="nav-logo" src="./img/logo.png" alt="logo"></a>
             <input class="side-menu" type="checkbox" id="side-menu"/>
             <label class="hamb" for="side-menu"><span class="hamb-line"></span></label>
             <nav class="nav">
                 <ul class="menu">
-                    <li><a href="#home"><strong>Domů</strong></a></li>
-                    <li><a href="#news">Služby</a></li>
-                    <li><a href="#contact">Reference</a></li>
-                    <li><a href="#about">O nás</a></li>
-                    <li><a href="#about">Kontakt</a></li>
+                    <li><a href="./index.html"><strong>Domů</strong></a></li>
+                    <li><a href="./Pages/služby.html">Služby</a></li>
+                    <li><a href="./Pages/reference.html">Reference</a></li>
+                    <li><a href="./Pages/o_nas.html">O nás</a></li>
+                    <li><a href="./Pages/kontakt.html">Kontakt</a></li>
                 </ul>
             </nav>
         </div>
@@ -78,11 +78,11 @@
         </div>
     </main>
     <section class="body__other">
-        <p class="other-text">Naše firma nabízí své služby ve stavebnictví od roku 2015.
-        <br>
-        <br>
-        Za kvalitu naší práce ručíme.</p>
-        <p class="service__button"><a href="./Pages/kontakt.html" class="btn btn-fill">Přesvědčit se</a></p>
+        <div class="body__other-content">
+            <p class="other-text">Naše firma nabízí své služby ve stavebnictví od roku 2015.</p>
+            <p class="other-text">Za kvalitu naší práce ručíme.</p>
+            <p class="service__button"><a href="./Pages/kontakt.html" class="btn btn-fill">Přesvědčit se</a></p>
+        </div>
     </section>
     <section class="body__references">
         <header class="references-header">
@@ -93,21 +93,27 @@
                 jsou jen zlomkem naší práce, za kterou se rozhodně nestydíme.</p>
         </header>
         <div class="references-gallery">
-            <picture class="service-picture">
-                <img class="img-rsp" src="./img/reference-hasicska-zbrojnice-600w.jpg" alt="">
-            </picture>
-            <h2 class="heading reference-heading">Hasičská zbrojnice</h2>
-            <p class="reference-text">celková rekonstrukce</p>
-            <picture class="service-picture">
-                <img class="img-rsp" src="./img/reference-pradelna-600w.jpg" alt="">
-            </picture>
-            <h2 class="heading reference-heading">Samoobslužná prádelna</h2>
-            <p class="reference-text">stavební úpravy a opravy</p>
-            <picture class="service-picture">
-                <img class="img-rsp" src="./img/reference-plocha-600w.jpg" alt="">
-            </picture>
-            <h2 class="heading reference-heading">Venkovní plochy Restyl</h2>
-            <p class="reference-text">provedení venkovních ploch</p>
+            <figure class="references-content">
+                <picture class="service-picture">
+                    <img class="img-rsp" src="./img/reference-hasicska-zbrojnice-600w.jpg" alt="">
+                </picture>
+                <h2 class="heading reference-heading">Hasičská zbrojnice</h2>
+                <p class="reference-text">celková rekonstrukce</p>
+            </figure>
+            <figure class="references-content">
+                <picture class="service-picture">
+                    <img class="img-rsp" src="./img/reference-pradelna-600w.jpg" alt="">
+                </picture>
+                <h2 class="heading reference-heading">Samoobslužná prádelna</h2>
+                <p class="reference-text">stavební úpravy a opravy</p> 
+            </figure>
+            <figure class="references-content">
+                <picture class="service-picture">
+                    <img class="img-rsp" src="./img/reference-plocha-600w.jpg" alt="">
+                </picture>
+                <h2 class="heading reference-heading">Venkovní plochy Restyl</h2>
+                <p class="reference-text">provedení venkovních ploch</p>
+            </figure>
         </div>
         <footer class="references-footer">
             <p class="service-button service-button--center"><a href="./Pages/reference.html" class="btn btn-fill">Více referencí</a></p>
