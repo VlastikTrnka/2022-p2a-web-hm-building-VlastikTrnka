@@ -13,11 +13,11 @@
     <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&display=swap" rel="stylesheet">
 </head>
 <body class="body">
-        <div class="body__nav">
+        <nav class="body__nav">
             <a href="./index.html" class="logo"><img class="nav-logo" src="./img/logo.png" alt="logo"></a>
             <input class="side-menu" type="checkbox" id="side-menu"/>
             <label class="hamb" for="side-menu"><span class="hamb-line"></span></label>
-            <nav class="nav">
+            <menu class="nav">
                 <ul class="menu">
                     <li><a href="./index.html"><strong>Domů</strong></a></li>
                     <li><a href="./Pages/služby.html">Služby</a></li>
@@ -25,20 +25,19 @@
                     <li><a href="./Pages/o_nas.html">O nás</a></li>
                     <li><a href="./Pages/kontakt.html">Kontakt</a></li>
                 </ul>
-            </nav>
-        </div>
+            </menu>
+        </nav>
     <header class="body__header">
-        <h1 class="header-main">HM Building.cz s.r.o.</h1>
-        <h1 class="header-main header-light">liberecká stavební společnost</h1>
+        <h1 class="header-main">HM Building.cz s.r.o.<br><span class="header-light">liberecká stavební společnost</span></h1>
     </header>
-    <main class="body_services">
-        <header class="services-header">
-            <h2 class="heading">Využijte škálu našich <span>služeb</span></h2>
+    <main class="body__services">
+        <header class="services__header">
+            <h2 class="heading">Využijte škálu našich <span class="heading-color">služeb</span></h2>
             <p>Ačkoliv provádíme především <strong>půmyslové stavby</strong>, není pro nás problém postavit
                 Vám <strong>rodinný domek na klíč</strong>, nebo jen hrubou stavbu. Nejsou nám cizí 
                 ani <strong>rekonstrukce budov</strong> a jejich údržba a to včetně okolních ploch.</p>
         </header>
-        <div class="services-content">
+        <div class="services__content">
             <picture class="service-picture right-cor">
                 <img class="img-rsp" src="./img/sluzba-novostavby-1200w.jpg" alt="">
             </picture>
@@ -85,37 +84,43 @@
         </div>
     </section>
     <section class="body__references">
-        <header class="references-header">
-            <h2 class="heading">Rádi vám ukážeme naše <span>reference</span></h2>
+        <header class="references__header">
+            <h2 class="heading">Rádi vám ukážeme naše <span class="heading-color">reference</span></h2>
             <p>Stojí za námi <strong>kvalitně vyhotovené zakázky</strong> dle konkrétních požadavků
                 zadavatelů <strong>podepřené letitými zkušenostmi ve stavebnictví</strong>.
                 To, že <strong>obrátit se na právě nás je vhodná volba potvrdí naši klienti</strong>, na jejichž stavbách jsme zanechali náš rukopis. Reference
                 jsou jen zlomkem naší práce, za kterou se rozhodně nestydíme.</p>
         </header>
-        <div class="references-gallery">
-            <figure class="references-content">
+        <div class="references__gallery">
+            <figure class="references__content">
                 <picture class="service-picture">
                     <img class="img-rsp" src="./img/reference-hasicska-zbrojnice-600w.jpg" alt="">
                 </picture>
-                <h2 class="heading reference-heading">Hasičská zbrojnice</h2>
-                <p class="reference-text">celková rekonstrukce</p>
+                <div class="references__description">
+                    <h2 class="heading reference-heading">Hasičská zbrojnice</h2>
+                    <p class="reference-text">celková rekonstrukce</p>
+                </div>
             </figure>
-            <figure class="references-content">
+            <figure class="references__content">
                 <picture class="service-picture">
                     <img class="img-rsp" src="./img/reference-pradelna-600w.jpg" alt="">
                 </picture>
-                <h2 class="heading reference-heading">Samoobslužná prádelna</h2>
-                <p class="reference-text">stavební úpravy a opravy</p> 
+                <div class="references__description">
+                    <h2 class="heading reference-heading">Samoobslužná prádelna</h2>
+                    <p class="reference-text">stavební úpravy a opravy</p> 
+                </div>
             </figure>
-            <figure class="references-content">
+            <figure class="references__content">
                 <picture class="service-picture">
                     <img class="img-rsp" src="./img/reference-plocha-600w.jpg" alt="">
                 </picture>
-                <h2 class="heading reference-heading">Venkovní plochy Restyl</h2>
-                <p class="reference-text">provedení venkovních ploch</p>
+                <div class="references__description">
+                    <h2 class="heading reference-heading">Venkovní plochy Restyl</h2>
+                    <p class="reference-text">provedení venkovních ploch</p>
+                </div>
             </figure>
         </div>
-        <footer class="references-footer">
+        <footer class="references__footer">
             <p class="service-button service-button--center"><a href="./Pages/reference.html" class="btn btn-fill">Více referencí</a></p>
         </footer>
     </section>

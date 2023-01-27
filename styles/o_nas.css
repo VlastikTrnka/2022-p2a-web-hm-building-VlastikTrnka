@@ -1,0 +1,61 @@
+.body__content {
+    padding: 3em 1em;
+}
+
+.header-aboutus  {
+    color: #3A3A3A;
+    text-align: left;
+    font-size: 3em;
+}
+
+.seznam-aboutus {
+    padding: 1em 2em;
+}
+
+.seznam-aboutus li {
+    padding: .2em 0;
+}
+
+ul li::marker {
+    color: var(--main-color);
+}
+
+.body__header {
+    display: none;
+}
+@media (min-width: 600px) 
+{
+    .body__content {
+        padding: 3em 2em;
+    }
+    .body__header {
+        display: none;
+    }
+
+    .header-aboutus  {
+        text-align: center;
+        font-size: 3.3em;
+    }
+}
+
+@media (min-width: 800px) 
+{ 
+    .body__content {
+        width: 85vw;
+        margin: 0 auto;
+    }
+    .body__header {
+        height: 16vh;
+        display: block;
+    }
+    .header-main, .header-light {
+        display: none;
+    }
+}
+
+@media (min-width: 1150px) 
+{ 
+    .body__content {
+        width: 70vw;
+    }
+}

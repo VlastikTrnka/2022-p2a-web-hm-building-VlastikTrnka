@@ -1,0 +1,9 @@
+@media (min-width: 600px) 
+{ 
+    .body__header {
+        height: 16vh;
+    }
+    .header-main, .header-light {
+        display: none;
+    }
+}

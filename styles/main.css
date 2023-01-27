@@ -96,7 +96,7 @@ html {
     display: none;
 }
 
-.side-menu:checked ~ nav{
+.side-menu:checked ~ .nav{
     max-height: 100%;
 }
 .side-menu:checked ~ .hamb .hamb-line {
@@ -115,6 +115,7 @@ html {
 /*** HEADER ***/
 
 .header-main {
+    text-align: center;
     color: var(--bg-color);
     font-style: bold;
     font-size: 2em;
@@ -122,7 +123,7 @@ html {
 
 .header-light {
     font-weight: 200;
-    font-size: 1.3em;
+    font-size: .8em;
     padding-bottom: 1em;
 }
 
@@ -140,10 +141,10 @@ html {
 
 
 
-.body_services {
+.body__services {
     padding: 2em 1em;
 }
-span {
+.heading-color {
     color: var(--main-color);
 }
 .heading {
@@ -295,7 +296,7 @@ p {
         width: 85vw;
         margin: 0 auto;
     }
-    .references-gallery {
+    .references__gallery {
         display: flex;
         gap: 1em;
     }
@@ -305,7 +306,7 @@ p {
     .reference-text {
         font-size: .7em;
     }
-    .references-header {
+    .references__header {
         text-align: center;
         padding: 0 3em;
     }
@@ -316,7 +317,7 @@ p {
 
 
 @media (min-width: 800px) {
-    .services-content {
+    .services__content {
         display: grid;
         grid-template-columns: 1fr 1fr;
         gap: 1.3em;
@@ -334,7 +335,7 @@ p {
     .fig-left {
         grid-column: 1;
     }
-    .services-header{
+    .services__header{
         text-align: center;
     }
     .body__other {
@@ -351,10 +352,10 @@ p {
         padding-top: 1.5em;
     }
     .header-main {
-        font-size: 2em;
+        font-size: 2.5em;
     }
     .header-light  {
-        font-size: 1.4em;
+        font-size: .8em;
     }
     p {
         padding-top: .4em;
@@ -431,17 +432,17 @@ p {
         width: 70vw;
         margin: 0 auto;
     }
-    .references-gallery {
+    .references__gallery {
         justify-content: center;
     }
     .service__button {
         padding-top: 2em;
     }
     .header-main {
-        font-size: 2.7em;
+        font-size: 3em;
     }
     .header-light  {
-        font-size: 1.8fem;
+        font-size: .8em;
     }
     .heading {
         font-size: 1.4em;
@@ -456,9 +457,10 @@ p {
         height: 100vh;
     }
     .header-main {
-        font-size: 3em;
+        font-size: 5em;
     }
     .header-light{
-        font-size: 2.3em;
+        font-size: .8em;
     }
 }
+
