@@ -1,0 +1,35 @@
+.gallery__img {
+    display: block;
+    object-fit: cover;
+    width: 100%;
+    height: auto;
+}
+.content__grid {
+    padding-top: 4em;
+    display: grid;
+    gap: 1em;
+    grid-template-columns: 1fr;
+}
+
+
+@media (min-width: 600px) 
+{ 
+    .text-aboutus {
+        text-align: center;
+        font-size: 1.3em;
+    }
+}
+
+@media (min-width: 800px) 
+{ 
+    .content__grid {
+        grid-template-columns: 1fr 1fr;
+    }
+}
+
+@media (min-width: 1150px) 
+{ 
+    .content__grid {
+        grid-template-columns: repeat(3,1fr);
+    }
+}

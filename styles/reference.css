@@ -1,3 +1,19 @@
+.body__references {
+    padding: 3em 1em;
+}
+
+.header-pages {
+    text-align: left;
+}
+
+p {
+    padding: .4em 0;
+}
+
+.body__header {
+    display: none;
+}
+
 @media (min-width: 600px) 
 { 
     .body__header {
@@ -5,5 +21,38 @@
     }
     .header-main, .header-light {
         display: none;
+    }
+    p {
+        padding: .4em 1.3em;
+    }
+    .header-pages {
+        text-align: center;
+        font-size: 2.7em;
+    }
+}
+
+@media (min-width: 800px) 
+{ 
+    .body__content {
+        width: 85vw;
+        margin: 0 auto;
+    }
+    .body__header {
+        height: 16vh;
+        display: block;
+    }
+    .header-main, .header-light {
+        display: none;
+    }
+    .header-pages  {
+        padding-bottom: .5em;
+        font-size: 3.2em;
+    }
+}
+
+@media (min-width: 1150px) 
+{ 
+    .body__content {
+        width: 70vw;
     }
 }

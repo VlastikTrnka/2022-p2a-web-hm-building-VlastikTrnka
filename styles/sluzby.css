@@ -6,17 +6,33 @@
     padding: 1em 2em;
 }
 
+.header-big {
+    font-size: 1.8em;
+}
+
 .seznam-aboutus li {
     padding: .2em 0;
 }
 
 ul li::marker {
     color: var(--main-color);
+    font-size: 1.3em;
 }
 
 .body__header {
     display: none;
 }
+
+.seznam-2end {
+    padding-left: 1em;
+}
+
+.seznam-2end > li::marker {
+    background-color: var(--main-color);
+    
+}
+
+
 @media (min-width: 600px) 
 {
     .body__content {
@@ -29,6 +45,12 @@ ul li::marker {
     .header-pages  {
         text-align: center;
         font-size: 3.5em;
+    }
+    .seznam-aboutus {
+        padding: 1em 3.7em;
+    }
+    .header-big {
+        font-size: 2.8em;
     }
 }
 
@@ -48,11 +70,21 @@ ul li::marker {
     .header-pages  {
         padding-bottom: .5em;
     }
+    .header-big {
+        font-size: 3.2em;
+    }
+    
 }
 
 @media (min-width: 1150px) 
 { 
     .body__content {
         width: 70vw;
+    }
+    .seznam-aboutus {
+        padding: 1em 5em;
+    }
+    .header-big {
+        font-size: 3.5em;
     }
 }

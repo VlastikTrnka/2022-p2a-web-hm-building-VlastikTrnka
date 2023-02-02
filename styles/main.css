@@ -76,8 +76,7 @@ html {
     position: relative;
     width: 32px;
 }
-.hamb-line::before,
-.hamb-line::after{
+.hamb-line::before, .hamb-line::after{
     background: linear-gradient(90deg, #EB6C27 0%, #FFBE9A 100%);
     content: '';
     display: block;
@@ -123,16 +122,24 @@ html {
 
 .header-light {
     font-weight: 200;
-    font-size: .8em;
+    font-size: .7em;
     padding-bottom: 1em;
 }
+
+
+.header-pages  {
+    color: #3A3A3A;
+    text-align: left;
+    font-size: 2.5em;
+}
+
 
 @media (max-width: 350px) {
     .header-main {
         font-size: 1.4em;
     }
     .header-light {
-        font-size: 1em;
+        font-size: .7em;
     }
     .body__header {
         height: 25vh;
@@ -154,7 +161,7 @@ html {
 }
 p {
     padding-top: 1em;
-    font-size: .9em;
+    font-size: 1em;
 }
 
 
@@ -352,10 +359,10 @@ p {
         padding-top: 1.5em;
     }
     .header-main {
-        font-size: 2.5em;
+        font-size: 2.8em;
     }
     .header-light  {
-        font-size: .8em;
+        font-size: .7em;
     }
     p {
         padding-top: .4em;
@@ -439,10 +446,10 @@ p {
         padding-top: 2em;
     }
     .header-main {
-        font-size: 3em;
+        font-size: 3.8em;
     }
     .header-light  {
-        font-size: .8em;
+        font-size: .7em;
     }
     .heading {
         font-size: 1.4em;
@@ -460,7 +467,7 @@ p {
         font-size: 5em;
     }
     .header-light{
-        font-size: .8em;
+        font-size: .7em;
     }
 }
 

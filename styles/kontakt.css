@@ -1,0 +1,178 @@
+
+.header-pages {
+    text-align: left;
+    font-size: 2em;
+}
+p {
+    text-align: left;
+}
+
+.body__header {
+    display: none;
+}
+
+.aboutus__content {
+    padding: 3em 1em;
+}
+
+.aboutus__info {
+    position: relative;
+    margin-left: 3em;
+    padding: 1em 0;
+}
+
+.aboutus-info {
+    color: var(--main-color);
+    font-size: 1em;
+    font-weight: 600;
+}
+
+.img-map {
+    height: auto;
+    max-height: none;
+    
+}
+
+.form__content {
+    padding-top: 2em;
+}
+
+/*** FORM ***/
+.submission__form {
+   
+}
+.form-text {
+    display:block;
+    padding: 1rem 0 .25rem;
+    
+}
+.input-form, textarea {
+    display: block;
+    width: 100%;
+    border: 1px solid var(--main-color);
+    padding: 1em 0;
+
+}
+
+.message {
+    padding: 5em 0;
+}
+
+
+
+
+.info-phone::before {
+    content: "";
+    border-radius: 50%;
+    background-color: var(--main-color);
+    background-image: url(../img/icons/local_phone_24px.svg);
+    display: inline-block;
+    background-repeat: no-repeat;
+    background-position: center;
+    width: 40px;
+    height: 40px;
+    position: absolute;
+    margin-left: -3em;
+    margin-top: -0.5em;
+}
+
+.info-mail::before {
+    content: "";
+    border-radius: 50%;
+    background-color: var(--main-color);
+    background-image: url(../img/icons/mail_24px.svg);
+    display: inline-block;
+    background-repeat: no-repeat;
+    background-position: center;
+    width: 40px;
+    height: 40px;
+    position: absolute;
+    margin-left: -3em;
+    margin-top: -0.5em;
+    
+}
+
+.info-place::before {
+    content: "";
+    border-radius: 50%;
+    background-color: var(--main-color);
+    background-image: url(../img/icons/room_24px.svg);
+    display: inline-block;
+    background-repeat: no-repeat;
+    background-position: center;
+    width: 40px;
+    height: 40px;
+    position: absolute;
+    margin-left: -3em;
+    margin-top: -0.5em;
+    
+}
+
+@media (min-width: 600px) 
+{ 
+    .aboutus__info {
+        padding: .6em 0;
+    }
+    .aboutus-info {
+        text-align: left;
+    }
+    .body__header {
+        height: 16vh;
+    }
+    .header-main, .header-light {
+        display: none;
+    }
+    p {
+        text-align: center;
+        padding: 1em 1.3em;
+    }
+    .header-pages {
+        text-align: center;
+        font-size: 2.7em;
+    }
+    .heading {
+        text-align: center;
+    }
+}
+
+@media (min-width: 800px) 
+{
+
+    .body__content {
+        width: 85vw;
+        margin: 0 auto;
+    }
+    .info__content{
+        padding-left: 4em;
+    }
+    .body__header {
+        height: 16vh;
+        display: block;
+    }
+    .header-main, .header-light {
+        display: none;
+    }
+    .header-pages  {
+        padding-bottom: .5em;
+        font-size: 3.2em;
+    }
+    .img-rsp {
+        padding-top: 0;
+    }
+    .img-map {
+        height: auto;
+        max-height: none;
+        max-width: 400px;
+    }
+    .body__content-aboutus {
+        display: flex;
+        flex-wrap: wrap;
+    }
+}
+
+@media (min-width: 1150px) 
+{ 
+    .body__content {
+        width: 70vw;
+    }
+}
