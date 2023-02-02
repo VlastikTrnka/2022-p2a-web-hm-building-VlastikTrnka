@@ -288,6 +288,9 @@ p {
     font-weight: 600;
     padding: 15px 37px;
 }
+.header__btn {
+    display: none;
+}
 
 
 
@@ -320,6 +323,10 @@ p {
     .other-text {
         padding-top: 0;
     }
+    .heading-main{
+        font-size: 2em;
+        padding-bottom: 1em;
+    }
 }
 
 
@@ -329,6 +336,7 @@ p {
         grid-template-columns: 1fr 1fr;
         gap: 1.3em;
         grid-auto-flow: dense;
+        padding-top: 3em;
     }
     .body__header {
         height: 65vh;
@@ -364,9 +372,35 @@ p {
     .header-light  {
         font-size: .7em;
     }
+    .heading-main{
+        font-size: 2.6em;
+    }
     p {
         padding-top: .4em;
     }
+    .services__header > p{
+        margin: 0 5em;
+    }
+
+    .header__btn {
+        display: block;
+        padding: 1em 0;
+    }
+
+    .header__btn::after {
+        content: "";
+        background-image: url(../img/icons/arrow_back_24px.svg);
+        display: inline-block;
+        background-repeat: no-repeat;
+        background-position: center;
+        width: 23px;
+        height: 13px;
+        margin-left: -2.5em;
+    }
+    .btn-arrow {
+        padding-right: 3em;
+    }
+
 
 
     /*** NAVBAR ***/
@@ -454,8 +488,15 @@ p {
     .heading {
         font-size: 1.4em;
     }
+    .heading-main{
+        font-size: 3em;
+    }
     .menu a {
         padding: .7em;
+    }
+    .header__btn {
+        padding-top: 2.5em;
+        padding-bottom: 1.8em;
     }
 }
 
