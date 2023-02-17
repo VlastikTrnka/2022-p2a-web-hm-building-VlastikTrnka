@@ -339,7 +339,7 @@ p {
         padding-top: 3em;
     }
     .body__header {
-        height: 65vh;
+        height: 100vh;
     }
     .fig-right {
         grid-column: 2;

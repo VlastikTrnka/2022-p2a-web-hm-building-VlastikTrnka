@@ -33,7 +33,7 @@ p {
 
 @media (min-width: 800px) 
 { 
-    .body__content {
+    .body__references {
         width: 85vw;
         margin: 0 auto;
     }
@@ -52,7 +52,7 @@ p {
 
 @media (min-width: 1150px) 
 { 
-    .body__content {
+    .body__references {
         width: 70vw;
     }
 }
