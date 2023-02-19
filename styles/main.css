@@ -8,13 +8,14 @@ html {
     --bg-color: #FFFFFF;
     --main-color: #EB6C27;
     --header-txt:  #888888;
+    font-size: 107%;
 }
 
 .body__header{
     background: linear-gradient(0deg, rgba(36, 36, 36, 0.4), rgba(36, 36, 36, 0.4)),
                 url(../img/pageheader-1920w.jpg);
     background-repeat: no-repeat;
-    height: 35vh;
+    height: 40vh;
     background-size:  cover;
     background-position: center;
     display: flex;
@@ -24,11 +25,7 @@ html {
 }
 
     /*** NAVBAR menu ***/
-.body_nav {
 
-    top: 0;
-    width: 100%;
-}
 .logo{
     display: inline-block;
     color: var(--white);
@@ -463,7 +460,7 @@ p {
 
 @media (min-width: 1150px) {
     .body__header {
-        height: 80vh;
+        height: 100vh;
     }
     .body > main, .body__references {
         width: 70vw;
